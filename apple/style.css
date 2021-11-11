@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+/* Font */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+/*end font*/
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/* Nav Bar */
+#apple_icon {
+  width: 40px;
+  background: url(images/navbar/apple-icon.png) 50% 50% no-repeat;
+}
+#mac {
+  width: 50px;
+  background: url(images/navbar/mac.png) 50% 50% no-repeat;
+}
+#ipad {
+  width: 50px;
+  background: url(images/navbar/ipad.png) 50% 50% no-repeat;
+}
+#iphone {
+  width: 50px;
+  background: url(images/navbar/iphone.png) 50% 50% no-repeat;
+}
+#music {
+  width: 50px;
+  background: url(images/navbar/music.png) 50% 50% no-repeat;
+}
+#watch {
+  width: 50px;
+  background: url(images/navbar/watch.png) 50% 50% no-repeat;
+}
+#tv {
+  width: 50px;
+  background: url(images/navbar/tv.png) 50% 50% no-repeat;
+}
+#support {
+  width: 55px;
+  background: url(images/navbar/support.png) 50% 50% no-repeat;
+}
+#search {
+  width: 50px;
+  background: url(images/navbar/search.png) 50% 50% no-repeat;
+}
+#shop {
+  width: 50px;
+  background: url(images/navbar/shop.png) 50% 50% no-repeat;
+}
+nav {
+  background: rgba(0,0,0,0.7);
+  height: 40px;
+}
+nav ul {
+  height: 40px;
+}
+nav li {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+}
+nav li:not(:last-child) {
+  margin-right: 51px;
+}
+nav a {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link {
+  background-origin: content-box;
+  opacity: 1;
+  height: 40px;
+}
+.nav-link:hover {
+  opacity: 0.55;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+/* hero */
+.hero {
+  margin-top: 11px;
+}
+#iphone-name {
+  background: url(images/iphone_6s_large.png) 0 0 no-repeat;
+  background-size: 330px 61px;
+  width: 330px;
+  height: 61px;
+  margin: 0 auto 13px;
+}
+#iphone-img {
+  display: inline-block;
+  background: url(images/iphone-6s-change_large.jpg) 0 0 no-repeat;
+  background-size: 420px 571px;
+  width: 420px;
+  height: 571px;
+  margin-left: 4px;
+}
+#apple-info {
+  position: absolute;
+  width: 440px;
+  top: 261px;
+  margin-left: 50px;
+  display: inline-block;
+}
+#apple-text {
+  text-align: center;
+  font-size: 39.5px;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 27.5px;
+}
+#apple-links {
+  text-align: center;
+}
+#apple-links > li {
+  display: inline-block;
+  font-size: 23.7px;
+  line-height: 1.3375;
+  font-weight: 300;
+  margin: 0 5px 10px;
+}
+#apple-links > li > a {
+  color: #08c;
+  text-decoration: none;
+}
+#apple-links > li > a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/*sub hero*/
+.sub-hero {
+  margin-top: 16px;
+}
+.sub-hero-images {
+  height: 200px;
+  background-size: 640px 200px;
+  border-right: 2px solid #fff;
+}
+.colum {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+#sub-watch {
+  background: url(images/watch_large.jpg) center center no-repeat;
+}
+#sub-ipad {
+  background: url(images/ipad_pro_large.jpg) center center no-repeat; 
+}
+#sub-access {
+  background: url(images/accessories_large.jpg) center center no-repeat;
+}
+#sub-macbook {
+  background: url(images/macbook_large.jpg) center center no-repeat;
+  border-right: none;
+}
+#sub-text {
+  margin: 22px 0 18px;
+  letter-spacing: -0.1px;
+  text-align: center;
+  font-weight: 400;
+}
+#sub-text a {
+  color: #08c;
+  text-decoration: none;
+}
+#sub-text a:hover {
+  text-decoration: underline;
+}
+/*heros end*/
+/*                 Footer                  */
+footer {
+  background-color: #f2f2f2;
+  font-size: 11.94px;
+  line-height: 1.66667;
+  font-weight: 400;
+  letter-spacing: -0.01px;
+  color: #666;
+}
+footer > .container {
+  padding: 0 22px;
+}
+.col-2 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-nav {
+  padding-top: 20px;
+}
+.footer-nav ul:not(:first-child) {
+  padding-top: 20px;
+}
+.footer-nav ul > li:first-child {
+  font-weight: 600;
+  color: #333;
+}
+.footer-nav ul > li:not(:first-child) > a {
+  text-decoration: none;
+  color: #666;
+}
+.footer-nav ul > li:not(:first-child) > a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+.footer-help {
+  color: #999;
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+.footer-help > p:first-child {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+}
+.footer-help > p:first-child > a {
+  color: #08c;
+  text-decoration: none;
+}
+.footer-help > p:first-child > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.footer-help > div {
+  display: inline-block;
+  vertical-align: top;
+}
+#legal {
+  margin-right: 22px;
+}
+#legal-links > a {
+  color: #666;
+  text-decoration: none;
+}
+#legal-links > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#legal-links > a:not(:last-child) {
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+#locale {
+  float: right;
+}
+#locale > a {
+  vertical-align: top;
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+}
+#locale > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#locale-flag {
+  display: inline-block;
+  height: 16px;
+  width: 21px;
+  background: url(images/usa.png) 3px 0 no-repeat;
+  background-size: 16px 16px;
+  margin-top: 1px;
+  padding-right: 1px;
+}
